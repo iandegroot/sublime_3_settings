@@ -1,0 +1,31 @@
+[
+    /* Switch key bindings of f3 and f12 */
+
+    // f3 to f12
+    { "keys": ["f12"], "command": "find_next" },
+    { "keys": ["shift+f12"], "command": "find_prev" },
+    { "keys": ["ctrl+f12"], "command": "find_under" },
+    { "keys": ["ctrl+shift+f12"], "command": "find_under_prev" },
+    { "keys": ["alt+f12"], "command": "find_all_under" },
+
+    // f12 to f3
+    { "keys": ["f3"], "command": "goto_definition" },
+
+    /* Change ctrl+shift+up/down to move as usual and highlight selection */
+    { "keys": ["ctrl+shift+up"], "command": "move", "args": {"by": "lines", "forward": false, "extend": true} },
+    { "keys": ["ctrl+shift+down"], "command": "move", "args": {"by": "lines", "forward": true, "extend": true} },
+
+    /* Switch the directions of ctrl+pageup/pagedown */
+    { "keys": ["ctrl+pageup"], "command": "next_view" },
+    { "keys": ["ctrl+pagedown"], "command": "prev_view" },
+
+    /* Change ctrl+tab to move to adjacent tabs */
+    { "keys": ["ctrl+tab"], "command": "next_view" },
+    { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+
+    /* Open Quick Switch Project */
+    { "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" },
+
+    /* Open new tab using ctrl+t */
+    { "keys": ["ctrl+t"], "command": "new_file" },
+]
